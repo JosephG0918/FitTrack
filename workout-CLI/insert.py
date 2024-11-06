@@ -31,6 +31,8 @@ except mariadb.Error as e:
 # Get Cursor
 cur = conn.cursor()
 
+# Adds a new exercise record to the workout_db database.
+# Inserts entries into CARDIO_TRACKERS and STRENGTH_TRACKERS tables, then creates an entry in EXERCISE_RECORDS linking the cardio and strength records.
 sql = """
     INSERT INTO CARDIO_TRACKERS (calories_lost, duration_minutes, intensity, cardio_type)
     VALUES (%s, %s, %s, %s)

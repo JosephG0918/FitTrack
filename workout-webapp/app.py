@@ -14,6 +14,10 @@ with open("creds/port.txt", "r") as f4:
     port = f4.readline().strip()
 
 def get_data():
+    """
+    Connects to the workout_db database, retrieves exercise records with cardio and strength details,
+    including duration and intensity, and returns the data.
+    """
     conn = mariadb.connect(
         user=user,
         password=password,
@@ -45,11 +49,21 @@ def get_data():
 
 @app.route('/')
 def index():
+    """
+    Renders the index page, retrieving exercise data from the database using get_data(),
+    and passes it to the 'index.html' template for display.
+    """
     data = get_data()
     return render_template('index.html', data=data)
 
 @app.route('/add_record', methods=['POST'])
 def add_record():
+    """
+    Adds a new exercise record to the workout_db database.
+    Retrieves form data for cardio and strength details, inserts entries into CARDIO_TRACKERS and 
+    STRENGTH_TRACKERS tables, then creates an entry in EXERCISE_RECORDS linking the cardio and strength records.
+    Finally, redirects to the index page.
+    """
     date = request.form['date']
     calories_lost = request.form['calories_lost']
     cardio_duration = request.form['cardio_duration']
@@ -93,6 +107,11 @@ def add_record():
 
 @app.route('/delete_record', methods=['POST'])
 def delete_record():
+    """
+    Deletes an exercise record from the workout_db database based on the provided row ID.
+    Removes the corresponding entries in EXERCISE_RECORDS, CARDIO_TRACKERS, and STRENGTH_TRACKERS tables,
+    then redirects to the index page.
+    """
     row_id = request.form['row_id']
     
     conn = mariadb.connect(
