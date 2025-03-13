@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Workout Data</title>
+		<link rel="stylesheet" type="text/css" href="/static/style.css">
+	</head>
+	<body>
+		<nav class="zone blue">
+			<div class="main-nav">
+				<h1>Workout Data</h1>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="table-wrapper">
+				<table>
+					<thead>
+						<tr>
+							<th>Row ID</th>
+							<th>Date</th>
+							<th>Calories Lost</th>
+							<th>Cardio Duration (minutes)</th>
+							<th>Cardio Intensity</th>
+							<th>Cardio Type</th>
+							<th>Strength Duration (minutes)</th>
+							<th>Strength Intensity</th>
+							<th>Total Duration (minutes)</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for row in data %}
+						<tr>
+							<td>{{ row.row_id }}</td>
+							<td>{{ row.date }}</td>
+							<td>{{ row.calories_lost }}</td>
+							<td>{{ row.cardio_duration }}</td>
+							<td>{{ row.cardio_intensity }}</td>
+							<td>{{ row.cardio_type }}</td>
+							<td>{{ row.strength_duration }}</td>
+							<td>{{ row.strength_intensity }}</td>
+							<td>{{ row.total_duration }}</td>							
+							<td>
+								<!-- Form for deleting records -->
+								<form action="/delete_record" method="POST" onsubmit="return confirm('Are you sure you want to delete this record?');">
+									<input type="hidden" name="row_id" value="{{ row.row_id }}">
+									<button type="submit" class="delete-btn">×</button>
+								</form>
+							</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+			<!-- Form for inputting new records -->
+			<form action="/add_record" method="POST">
+				<label for="date">Date:</label>
+				<input type="date" id="date" name="date" required>
+			
+				<label for="calories_lost">Calories Lost:</label>
+				<input type="number" id="calories_lost" name="calories_lost" required>
+			
+				<label for="cardio_duration">Cardio Duration (minutes):</label>
+				<input type="number" id="cardio_duration" name="cardio_duration" required>
+			
+				<label for="cardio_intensity">Cardio Intensity:</label>
+				<select id="cardio_intensity" name="cardio_intensity" required>
+					<option value="Low">Low</option>
+					<option value="Medium">Medium</option>
+					<option value="High">High</option>
+				</select>
+
+				<label for="cardio_type">Cardio Type:</label>
+				<select id="cardio_type" name="cardio_type" required>
+					<option value="Walking">Walking</option>
+					<option value="Jogging">Jogging</option>
+					<option value="Running">Running</option>
+					<option value="Walking/Jogging">WalkingAndJogging</option>
+					<option value="Walking/Running">WalkingAndRunning</option>
+					<option value="Jogging/Running">JoggingAndRunning</option>
+				</select>
+			
+				<label for="strength_duration">Strength Duration (minutes):</label>
+				<input type="number" id="strength_duration" name="strength_duration" required>
+			
+				<label for="strength_intensity">Strength Intensity:</label>
+				<select id="strength_intensity" name="strength_intensity" required>
+					<option value="Low">Low</option>
+					<option value="Medium">Medium</option>
+					<option value="High">High</option>
+				</select>
+			
+				<button type="submit">Add Record</button>
+			</form>			
+		</div>
+	</body>
+</html>
