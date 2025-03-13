@@ -106,9 +106,10 @@ workout-tracker/
 ├── templates/
 │   └── index.html      # Main page template
 ├── static/
-│   └── style.css
+│   └── style.css       # Main page styles
 ├── .env                # Environment variables (not in version control)
-└── README.md           # This file
+├── README.md
+└── LICENSE
 ```
 
 ## Security Notes 🔒 ⚠️
