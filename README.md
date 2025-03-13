@@ -125,6 +125,9 @@ pipenv shell
 python app.py
 ```
 
+## Credits 🙏 🏅
+- Claude AI helping write this readme file.
+
 ## License 📜 📝
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
