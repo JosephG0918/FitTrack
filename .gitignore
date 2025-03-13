@@ -1,0 +1,7 @@
+# Python
+workout-tracker/__pycache__/
+workout-tracker/*.pyc
+workout-tracker/*.pyo
+
+# Environment variables
+workout-tracker/.env
