@@ -1,8 +1,8 @@
-# Workout Tracker Application
+# Workout Tracker Application 🏋️‍♂️ 📊
 
 A Flask-based web application for tracking workout sessions with both cardio and strength training components. This application helps users record, manage, and analyze their exercise data over time.
 
-## Features
+## Features 🔧 ⚙️
 
 - Log workout sessions with date, calories burned, and exercise details
 - Track cardio exercises with duration, intensity, and type
@@ -11,13 +11,13 @@ A Flask-based web application for tracking workout sessions with both cardio and
 - Calculate total workout duration for each session
 - Delete unwanted workout records
 
-## Requirements
+## Requirements 📋 ✅
 
 - Python 3.11+ (Check the Pipfile)
 - MariaDB/MySQL
 - Pipenv (for dependency management)
 
-## Installation
+## Installation 🛠️ 📦
 
 1. Clone the repository:
    ```bash
@@ -30,7 +30,7 @@ A Flask-based web application for tracking workout sessions with both cardio and
    pipenv install
    ```
 
-3. Create a `.env` file in the project root with your database credentials (One may exist already):
+3. Create a `.env` file in the project root with your database credentials:
    ```
    DB_HOST=localhost
    DB_USER=your_database_user
@@ -70,7 +70,7 @@ A Flask-based web application for tracking workout sessions with both cardio and
     );
    ```
 
-## Usage
+## Usage 📝 🚀
 
 1. Activate the Pipenv environment and start the application:
    ```bash
@@ -96,27 +96,28 @@ A Flask-based web application for tracking workout sessions with both cardio and
    - Find the record in the workout history table
    - Click the "Delete" button next to the record
 
-## Project Structure
+## Project Structure 📂 🗂️
 
 ```
 workout-tracker/
 ├── app.py              # Main application file
 ├── Pipfile             # Pipenv dependency definitions
 ├── Pipfile.lock        # Locked dependencies
-├── templates/          # HTML templates
+├── templates/
 │   └── index.html      # Main page template
-├── static/             # CSS, JavaScript, and other static files
+├── static/
+│   └── style.css
 ├── .env                # Environment variables (not in version control)
 └── README.md           # This file
 ```
 
-## Security Notes
+## Security Notes 🔒 ⚠️
 
 - The application uses a randomly generated secret key for Flask sessions
 - Database credentials are stored in environment variables for security
 - Connection management ensures proper resource cleanup
 
-## Development
+## Development 💻 🛠️
 
 To run the application in debug mode (automatically enabled):
 ```bash
@@ -124,6 +125,6 @@ pipenv shell
 python app.py
 ```
 
-## License
+## License 📜 📝
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
