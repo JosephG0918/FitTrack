@@ -97,7 +97,7 @@ A Flask-based web application for tracking workout sessions with both cardio and
 
 4. To delete a workout record:
    - Find the record in the workout history table
-   - Click the "Delete" button next to the record
+   - Click the delete or "x" button next to the record
 
 ## Project Structure 📂 🗂️
 
