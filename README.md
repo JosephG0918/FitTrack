@@ -69,9 +69,9 @@ A Flask-based web application for tracking workout sessions with both cardio and
     FOREIGN KEY (strength_id) REFERENCES STRENGTH_TRACKERS(strength_id)
     );
    ```
+
    Entity Relationship Diagram:
    ![ERD](https://github.com/user-attachments/assets/d46587be-d8d4-46b8-aa79-a79c116fba1a)
-
 
 ## Usage 📝 🚀
 
