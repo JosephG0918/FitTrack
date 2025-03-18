@@ -17,6 +17,22 @@ A Flask-based web application for tracking workout sessions with both cardio and
 - MariaDB/MySQL
 - Pipenv (for dependency management)
 
+## Project Structure 📂 🗂️
+
+```
+workout-tracker/
+├── app.py              # Main application file
+├── Pipfile             # Pipenv dependency definitions
+├── Pipfile.lock        # Locked dependencies
+├── templates/
+│   └── index.html      # Main page template
+├── static/
+│   └── style.css       # Main page styles
+└── .env                # Environment variables (not in version control)
+README.md
+LICENSE
+```
+
 ## Installation 🛠️ 📦
 
 1. Clone the repository:
@@ -26,9 +42,27 @@ A Flask-based web application for tracking workout sessions with both cardio and
    ```
 
 2. Install dependencies using Pipenv:
-   ```bash
+   
+   Make sure you have pipenv installed. If not, install it using:
+   ```
+   pip install pipenv
+   ```
+   or
+   ```
+   sudo apt install pipenv
+   ```
+   
+   Activate the virtual environment using:
+   ```
+   pipenv shell
+   ```
+
+   Then install all project dependencies using:
+   ```
    pipenv install
    ```
+
+   More info about pipenv [here](https://pypi.org/project/pipenv/)
 
 3. Create a `.env` file in the project root with your database credentials:
    ```
@@ -70,6 +104,9 @@ A Flask-based web application for tracking workout sessions with both cardio and
     );
    ```
 
+   Entity Relationship Diagram:
+   ![ERD](https://github.com/user-attachments/assets/d46587be-d8d4-46b8-aa79-a79c116fba1a)
+
 ## Usage 📝 🚀
 
 1. Activate the Pipenv environment and start the application:
@@ -94,37 +131,13 @@ A Flask-based web application for tracking workout sessions with both cardio and
 
 4. To delete a workout record:
    - Find the record in the workout history table
-   - Click the "Delete" button next to the record
-
-## Project Structure 📂 🗂️
-
-```
-workout-tracker/
-├── app.py              # Main application file
-├── Pipfile             # Pipenv dependency definitions
-├── Pipfile.lock        # Locked dependencies
-├── templates/
-│   └── index.html      # Main page template
-├── static/
-│   └── style.css       # Main page styles
-├── .env                # Environment variables (not in version control)
-├── README.md
-└── LICENSE
-```
+   - Click the delete or "x" button next to the record
 
 ## Security Notes 🔒 ⚠️
 
 - The application uses a randomly generated secret key for Flask sessions
 - Database credentials are stored in environment variables for security
 - Connection management ensures proper resource cleanup
-
-## Development 💻 🛠️
-
-To run the application in debug mode (automatically enabled):
-```bash
-pipenv shell
-python app.py
-```
 
 ## Credits 🙏 🏅
 - Claude AI helping write this readme file.
