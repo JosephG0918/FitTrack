@@ -2,7 +2,7 @@
 
 A Flask-based web application for tracking workout sessions with both cardio and strength training components. This application helps users record, manage, and analyze their exercise data over time.
 
-## Features 🔧 ⚙️
+## Features
 
 - Log workout sessions with date, calories burned, and exercise details
 - Track cardio exercises with duration, intensity, and type
@@ -11,13 +11,13 @@ A Flask-based web application for tracking workout sessions with both cardio and
 - Calculate total workout duration for each session
 - Delete unwanted workout records
 
-## Requirements 📋 ✅
+## Requirements
 
 - Python 3.11+ (Check the Pipfile)
 - MariaDB/MySQL
 - Pipenv (for dependency management)
 
-## Project Structure 📂 🗂️
+## Project Structure
 
 ```
 workout-tracker/
@@ -33,7 +33,7 @@ README.md
 LICENSE
 ```
 
-## Installation 🛠️ 📦
+## Installation
 
 1. Clone the repository:
    ```bash
@@ -107,7 +107,7 @@ LICENSE
    Entity Relationship Diagram:
    ![ERD](https://github.com/user-attachments/assets/d46587be-d8d4-46b8-aa79-a79c116fba1a)
 
-## Usage 📝 🚀
+## Usage
 
 1. Activate the Pipenv environment and start the application:
    ```bash
@@ -133,15 +133,15 @@ LICENSE
    - Find the record in the workout history table
    - Click the delete or "x" button next to the record
 
-## Security Notes 🔒 ⚠️
+## Security Notes
 
 - The application uses a randomly generated secret key for Flask sessions
 - Database credentials are stored in environment variables for security
 - Connection management ensures proper resource cleanup
 
-## Credits 🙏 🏅
+## Credits
 - Claude AI helping write this readme file.
 
-## License 📜 📝
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
