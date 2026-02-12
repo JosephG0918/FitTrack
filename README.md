@@ -38,7 +38,7 @@ LICENSE
 1. Clone the repository:
    ```bash
    git clone https://github.com/JosephG0918/FitTrack.git
-   cd workout-tracker
+   cd FitTrack/workout-tracker
    ```
 
 2. Install dependencies using Pipenv:
