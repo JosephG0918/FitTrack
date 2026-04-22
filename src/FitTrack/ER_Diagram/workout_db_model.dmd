@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="workout_db_model" id="FF8773D6-72D3-D46F-15BA-D8FE99CFE578" version="3.5">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-29 06:10:47 UTC</createdTime>
+<ownerDesignName>gossett_exercise_2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FF8773D6-72D3-D46F-15BA-D8FE99CFE578</designId>
+</OSDM_Design>

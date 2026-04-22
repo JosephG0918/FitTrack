@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A1B1CBC6-2BB7-69DF-F825-913EBE75F859" containerWithKeyObject="CF239C79-8D29-DEB6-8B3C-05F5460D5DE7" localFKIndex="40316D76-AD48-25B5-B3E8-B409E284436D" name="EXERCISE_RECORD_WEIGHT_LIFTING_FK">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-31 03:42:52 UTC</createdTime>
+<generatorID>6AA504DD-8968-F479-1224-39B3B092D560</generatorID>
+<ownerDesignName>workout_db_model</ownerDesignName>
+<referredTableLongName>STRENGTH_TRACKERS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8B28F0AE-6051-C813-144B-7C504E211478</referredTableID>
+<keyObject>C5DD2AB2-7E80-CB9E-CC38-A03F8B47192C</keyObject>
+<referredKeyID>C5DD2AB2-7E80-CB9E-CC38-A03F8B47192C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>strength_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EDA88301-393B-94BB-F933-AD13AC9BCE00" containerWithKeyObject="CF239C79-8D29-DEB6-8B3C-05F5460D5DE7" localFKIndex="B1F718C5-EF41-722B-CD03-42FFF1575DCA" name="EXERCISE_RECORD_CARDIO_FK">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-31 03:42:52 UTC</createdTime>
+<generatorID>F6698AA2-41FD-CB43-6FD0-7C57703B43B6</generatorID>
+<ownerDesignName>workout_db_model</ownerDesignName>
+<referredTableLongName>CARDIO_TRACKERS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EFDE4846-1CA7-9ACB-21DC-49A530E9181B</referredTableID>
+<keyObject>0D77811F-6F7E-295E-6176-4D6E8A2FF171</keyObject>
+<referredKeyID>0D77811F-6F7E-295E-6176-4D6E8A2FF171</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cardio_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

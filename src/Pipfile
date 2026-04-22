@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+mariadb = "*"
+python-dotenv = "*"
+pillow = "*"
+psutil = "*"
+spidev = {version = "*", markers = "sys_platform == 'linux'"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

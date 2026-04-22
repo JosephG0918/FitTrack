@@ -1,0 +1,10 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# Ignore all log files
+*.log

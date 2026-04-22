@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="A4144857-DD59-53D5-9BCD-352C2C5C5B87" mainViewID="60D17749-3C11-CED4-15A8-6BB6C4C0D85D">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-29 06:10:47 UTC</createdTime>
+<ownerDesignName>gossett_exercise_2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="3F5192E9-F8AC-9586-5D94-16F23E80E560" name="EXERCISE_RECORD" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A4144857-DD59-53D5-9BCD-352C2C5C5B87" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="40FECC14-4D03-9E96-A1E5-8E532028A360" name="WEIGHT_LIFTING" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A4144857-DD59-53D5-9BCD-352C2C5C5B87" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="497B3F19-AA1B-D3A0-7B88-E0CB6FEBC87C" name="CARDIO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A4144857-DD59-53D5-9BCD-352C2C5C5B87" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="6AA504DD-8968-F479-1224-39B3B092D560" name="Relation_2" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="A4144857-DD59-53D5-9BCD-352C2C5C5B87" propertySourceId="40FECC14-4D03-9E96-A1E5-8E532028A360" propertyTargetId="3F5192E9-F8AC-9586-5D94-16F23E80E560"/>
+   <object objectType="Relation" objectID="F6698AA2-41FD-CB43-6FD0-7C57703B43B6" name="Relation_1" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="A4144857-DD59-53D5-9BCD-352C2C5C5B87" propertySourceId="497B3F19-AA1B-D3A0-7B88-E0CB6FEBC87C" propertyTargetId="3F5192E9-F8AC-9586-5D94-16F23E80E560"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

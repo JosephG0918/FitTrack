@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF239C79-8D29-DEB6-8B3C-05F5460D5DE7" name="EXERCISE_RECORDS">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-31 03:42:52 UTC</createdTime>
+<generatorID>3F5192E9-F8AC-9586-5D94-16F23E80E560</generatorID>
+<ownerDesignName>workout_db_model</ownerDesignName>
+<ordsAlias>exercise_record</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9CFCDEE0-E9B1-B68F-1B8A-A49E92720214">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-31 03:42:52 UTC</createdTime>
+<generatorID>72EAAF32-1671-7CB1-AD62-089F62C15087</generatorID>
+<ownerDesignName>workout_db_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="FE8DD113-73A5-14CA-BE65-054581BD1A3B">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-31 03:42:52 UTC</createdTime>
+<generatorID>E5D36375-9E8E-7577-FC05-15C237DFC775</generatorID>
+<ownerDesignName>workout_db_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cardio_id" id="6139CA56-7003-25A1-EB2F-04A8D2CC42C6">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-31 03:42:52 UTC</createdTime>
+<generatorID>65A47F5E-8D20-1F87-9292-E55F9CD2BFC9</generatorID>
+<ownerDesignName>workout_db_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDA88301-393B-94BB-F933-AD13AC9BCE00" referredColumn="ACE94B06-CE16-7290-1968-CA10F3064D57"/>
+</associations>
+</Column>
+<Column name="strength_id" id="DE0254A6-D681-9AF0-7637-F67165BB3038">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-31 03:42:52 UTC</createdTime>
+<generatorID>34861C59-E058-CBC2-8455-A891C2A953E4</generatorID>
+<ownerDesignName>workout_db_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1B1CBC6-2BB7-69DF-F825-913EBE75F859" referredColumn="9A64C1DE-2FB3-09A3-0E45-6F1124FA688D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="319D6139-D5F4-7259-4734-E00DBC4EC9F2" name="EXERCISE_RECORD_PK">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-31 03:42:52 UTC</createdTime>
+<generatorID>C100CF63-71BB-81E2-AC3D-C93EC8BBDA9F</generatorID>
+<ownerDesignName>workout_db_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CFCDEE0-E9B1-B68F-1B8A-A49E92720214"/>
+<colUsage columnID="6139CA56-7003-25A1-EB2F-04A8D2CC42C6"/>
+<colUsage columnID="DE0254A6-D681-9AF0-7637-F67165BB3038"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1F718C5-EF41-722B-CD03-42FFF1575DCA" name="EXERCISE_RECORD_CARDIO_FK">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-31 03:42:52 UTC</createdTime>
+<generatorID>F6698AA2-41FD-CB43-6FD0-7C57703B43B6</generatorID>
+<ownerDesignName>workout_db_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6139CA56-7003-25A1-EB2F-04A8D2CC42C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40316D76-AD48-25B5-B3E8-B409E284436D" name="EXERCISE_RECORD_WEIGHT_LIFTING_FK">
+<createdBy>jkgos</createdBy>
+<createdTime>2023-12-31 03:42:52 UTC</createdTime>
+<generatorID>6AA504DD-8968-F479-1224-39B3B092D560</generatorID>
+<ownerDesignName>workout_db_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE0254A6-D681-9AF0-7637-F67165BB3038"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
