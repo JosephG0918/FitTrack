@@ -139,6 +139,12 @@ workout_webapp/
    Update `app.wsgi` with the correct user and virtual environment path:
    `activate_this = '/home/(user)/.local/share/virtualenvs/(venv)/bin/activate_this.py`
 
+   Install mod_wsgi and enable it:
+   ```
+   sudo apt install libapache2-mod-wsgi-py3
+   sudo a2enmod wsgi
+   ```
+
    Start Apache and check status:
    ```
    sudo systemctl start apache2
@@ -147,6 +153,13 @@ workout_webapp/
    sudo systemctl status apache2
    ```
    `apache2.service should` be `active`.
+
+   If you want to do a clean reinstall of Apache:
+   ```
+   sudo apt purge apache2 apache2-bin apache2-data apache2-utils
+   sudo apt autoremove
+   sudo apt install apache2
+   ```
 
 6. Open your web browser and navigate to:
    ```
