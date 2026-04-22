@@ -134,7 +134,12 @@ workout_webapp/
    ```
    ls /etc/apache2/sites-enabled/
    ```
-   You should see `workout-app.conf`.
+   You should see `workout-app.conf` only.
+
+   If you see any other enabled site configuration files, disable them using:
+   ```
+   sudo a2dissite (conf)
+   ```
 
    Update `app.wsgi` with the correct user and virtual environment path:
    `activate_this = '/home/(user)/.local/share/virtualenvs/(venv)/bin/activate_this.py`
