@@ -21,7 +21,7 @@ while True:
         # Create blank image for drawing
         image = Image.new("RGB", (disp.height, disp.width), (0, 0, 0))  # BLACK
         draw = ImageDraw.Draw(image)
-        font = ImageFont.truetype("/home/(user)/FitTrack/src/LCD_project/LCD_Module_RPI_code/RaspberryPi/python/Font/Font00.ttf", 23)
+        font = ImageFont.truetype("/home/<user>/FitTrack/src/LCD_project/LCD_Module_RPI_code/RaspberryPi/python/Font/Font00.ttf", 23)
 
         # Display date and time
         draw.text((1, 12), str(datetime.now().strftime('%a  %b  %d  %H:%M:%S')), fill=(255, 255, 0), font=font)

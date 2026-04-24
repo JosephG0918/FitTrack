@@ -29,7 +29,8 @@ workout_webapp/
 │   └── index.html      # Main page template
 ├── static/
 │   └── style.css       # Main page styles
-└── .env                # Environment variables (not in version control)
+├── .env                # Environment variables (not in version control)
+└── setup_venv.sh                # Sets up virtual environment
 ```
 
 ## Web App Installation
@@ -64,7 +65,7 @@ workout_webapp/
 
    More info about pipenv [here](https://pypi.org/project/pipenv/)
 
-3. Create a `.env` file in the project root (FitTrack/src/FitTrack/var/workout_webapp) with your database credentials:
+3. Create a `.env` file in the project root `FitTrack/src/FitTrack/var/workout_webapp` with your database credentials:
    ```
    DB_HOST=localhost
    DB_USER=your_database_user
@@ -138,11 +139,11 @@ workout_webapp/
 
    If you see any other enabled site configuration files, disable them using:
    ```
-   sudo a2dissite (conf)
+   sudo a2dissite <example.conf>
    ```
 
-   Update `app.wsgi` with the correct user and virtual environment path:
-   `activate_this = '/home/(user)/.local/share/virtualenvs/(venv)/bin/activate_this.py`
+   Update `app.wsgi` with the correct user and venv (virtual environment) path:
+   `activate_this = '/home/<user>/.local/share/virtualenvs/<venv>/bin/activate_this.py`
 
    Install mod_wsgi and enable it:
    ```
@@ -210,15 +211,15 @@ workout_webapp/
 
    What you should copy and paste:
    ```
-   @reboot /usr/bin/python /home/(user)/FitTrack/src/LCD_project/LCD_Module_RPI_code/RaspberryPi/python/LCD_specs.py
+   @reboot /usr/bin/python /home/<user>/FitTrack/src/LCD_project/LCD_Module_RPI_code/RaspberryPi/python/LCD_specs.py
    ```
-   Make sure to replace `(user)` with your actual Pi username.
+   Make sure to replace `<user>` with your actual Pi username.
 
    Ensure the Python script is correctly configured: 
    `FitTrack/src/LCD_project/LCD_Module_RPI_code/RaspberryPi/python/LCD_specs.py`
    Update the font path to match your system user:
    ```
-   font = ImageFont.truetype("/home/(user)/FitTrack/src/LCD_project/LCD_Module_RPI_code/RaspberryPi/python/Font/Font00.ttf", 23)
+   font = ImageFont.truetype("/home/<user>/FitTrack/src/LCD_project/LCD_Module_RPI_code/RaspberryPi/python/Font/Font00.ttf", 23)
    ```
    This script runs at boot and displays system information on the LCD screen.
 
