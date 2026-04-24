@@ -228,7 +228,7 @@ workout_webapp/
    ```
    This script runs at boot and displays system information on the LCD screen.
 
-   Finally reboot the system:
+   Finally, reboot the system:
    ```
    sudo reboot -h now
    ```
