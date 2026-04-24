@@ -143,7 +143,7 @@ workout_webapp/
    ```
 
    Update `app.wsgi` with the correct user and venv (virtual environment) path:
-   `activate_this = '/home/<user>/.local/share/virtualenvs/<venv>/bin/activate_this.py`
+   `activate_this = /home/<user>/.local/share/virtualenvs/<venv>/bin/activate_this.py`
 
    Install mod_wsgi and enable it:
    ```
